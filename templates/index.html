@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+    <div class="grid-container">
+        <div class="grid-item-image">
+            <img src="{{ url_for('static', filename= 'img/debian.jpg') }}" width=250px alt="debian">
+        </div>  
+        <div class="grid-item-image">
+            <img src="{{ url_for('static', filename= 'img/aws.png') }}" width=250px alt="aws">
+        </div> 
+        <div class="grid-item-image">
+            <img src="{{ url_for('static', filename= 'img/jinja.png') }}" height=50px alt="jinja">
+            <img src="{{ url_for('static', filename= 'img/python.png') }}" height=50px alt="python">
+            <img src="{{ url_for('static', filename= 'img/flask.png') }}" height=50px alt="flask">
+            <img src="{{ url_for('static', filename= 'img/gunicorn.png') }}" height=50px alt="gunicorn">
+        </div>
+        <div class="grid-item-content">
+            <h1>Gunicorn-Flask-Python WebApp</h1>
+            <p>Host IP: {{ localIP }}</p>
+            <p>Hostname: {{ hostname }}</p>
+        </div>
+    </div>
+{% endblock %}
