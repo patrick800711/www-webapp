@@ -5,7 +5,7 @@
 {% block content %}
     <div class="grid-container">
         <div class="grid-item-image">
-            <img src="{{ url_for('static', filename= 'img/debian.jpg') }}" width=250px alt="debian">
+            <img src="{{ url_for('static', filename= 'img/gcp.png') }}" width=250px alt="gcp">
         </div>  
         <div class="grid-item-image">
             <img src="{{ url_for('static', filename= 'img/aws.png') }}" width=250px alt="aws">
@@ -17,7 +17,8 @@
             <img src="{{ url_for('static', filename= 'img/gunicorn.png') }}" height=50px alt="gunicorn">
         </div>
         <div class="grid-item-content">
-            <h1>Gunicorn-Flask-Python WebApp</h1>
+            <h1>Gunicorn-Flask-Python-Jinja</h1>
+            <p>Webapp running on:</p>
             <p>Host IP: {{ localIP }}</p>
             <p>Hostname: {{ hostname }}</p>
         </div>
