@@ -1,10 +1,15 @@
 # Development environment - isolated Python environment, its own dependencies
 
-Create development environment
+### Create development environment
+
 > python3 -m venv env
-Activate development environment
+
+### Activate development environment
+
 > source env/bin/activate
-Deactivate environment
+
+### Deactivate environment
+
 > deactivate
 
 # Repo for Python WebApp
