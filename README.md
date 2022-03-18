@@ -1,5 +1,13 @@
-# awslabs
-Repo for Python WebApp
+# Development environment - isolated Python environment, its own dependencies
+
+Create development environment
+> python3 -m venv env
+Activate development environment
+> source env/bin/activate
+Deactivate environment
+> deactivate
+
+# Repo for Python WebApp
 
 Clone the application code
 
@@ -9,10 +17,11 @@ Start gunicorn
 
 > gunicorn --workers=2 --daemon --chdir python-webapp main:app
 
-Need to configure NGINX as reverse proxy on Port 80 
+# NGINX Reverse Proxy
+Need to configure NGINX as reverse proxy on Port 80 that forwards to 8000 / 8080
 
--- Create NGINX configuration
-> sudo nano /etc/nginx/sites-available/webapp
+Create NGINX configuration
+> sudo vi /etc/nginx/sites-available/webapp
 
 server {
         listen 80;
